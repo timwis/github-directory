@@ -5,7 +5,13 @@ site when you're not sure what to put there.
 [![screenshot](http://i.imgur.com/m5Rt8pJ.png)](http://github-directory.surge.sh)
 
 ## Usage
-Just fork this repository, then rename it `<your-username>.github.io`.
+Just fork this repository, then rename it `<your-username>.github.io`. You may need
+to make a commit for GitHub to generate the site (just add a space to 
+[`_config.yml`](_config.yml) or something).
+
+Prefer to use a project page instead of a user/org page? You'll just have to rename
+the `master` branch to `gh-pages`. You'll have to do that using the GitHub Desktop
+application or at the command line though. :-/
 
 You can change the way the repositories are sorted by editing
 [`_config.yml`](_config.yml).
