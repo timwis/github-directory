@@ -1,0 +1,46 @@
+---
+layout: default
+---
+{% assign site_title = site.title | default: site.github.owner_name %}
+<h1 class="site-title">
+  <a href="{{ site.github.owner_url }}">{{ site_title }}</a>
+</h1>
+
+{% assign repos = site.github.public_repositories | sort: site.repos_sort_by %}
+
+{% if site.repos_include_forks == false %}
+  {% assign repos = repos | where: 'fork', false %}
+{% endif %}
+
+{% if site.repos_sort_dir == 'desc' %}
+  {% assign repos = repos | reverse %}
+{% endif %}
+
+{% for repo in repos %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <a href="{{ repo.html_url }}" class="panel-title">
+        {{ repo.name }}
+      </a>
+      
+      <span class="pull-right">
+        <span class="language">{{ repo.language }}</span>
+        {% if repo.stargazers_count > 0 %}
+          <a href="{{ repo.html_url }}/stargazers" class="panel-title stargazers">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            {{ repo.stargazers_count }}
+          </a>
+        {% endif %}
+      </span>
+    </div>
+    <div class="panel-body">
+      {% if repo.description != empty %}
+        <div class="description">{{ repo.description }}</div>
+      {% endif %}
+      <div class="updated">
+        Updated
+        <time class="timeago" title="{{ repo.updated_at }}">{{ repo.updated_at }}</time>
+      </div>
+    </div>
+  </div>
+{% endfor %}

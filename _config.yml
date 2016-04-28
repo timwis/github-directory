@@ -1,0 +1,14 @@
+# Site title. Defaults to GitHub Username/Org name
+title: ""
+
+# Sort repositories by this key
+# Options: stargazers_count, watchers_count, language, forks, created_at, updated_at
+repos_sort_by: stargazers_count
+repos_sort_dir: desc
+
+repos_include_forks: false
+
+baseurl: ""
+
+# Used to simulate gh-pages environment locally
+repository: timwis/timwis.github.io
