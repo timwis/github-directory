@@ -2,14 +2,10 @@
 Generates a page of your GitHub repositories. Useful for a user/org GitHub Pages
 site when you're not sure what to put there.
 
-[![screenshot](http://i.imgur.com/m5Rt8pJ.png)](http://timwis.com/github-directory)
+[![screenshot](http://i.imgur.com/m5Rt8pJ.png)](http://github-directory.surge.sh)
 
 ## Usage
-Just fork this repository and it will be available at
-`<your-username>.github.io/github-directory/`.
-
-To make it your user/org page, rename your fork `<your-username>.github.io`
-and it will be available at `<your-username>github.io` (no suffix).
+Just fork this repository, then rename it `<your-username>.github.io`.
 
 You can change the way the repositories are sorted by editing
 [`_config.yml`](_config.yml).
