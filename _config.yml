@@ -2,7 +2,7 @@
 title: ""
 
 # Sort repositories by this key
-# Options: stargazers_count, watchers_count, language, forks, created_at, updated_at
+# Options: stargazers_count, watchers_count, language, forks, created_at, pushed_at
 repos_sort_by: stargazers_count
 repos_sort_dir: desc
 
