@@ -9,6 +9,9 @@ Just fork this repository, then rename it `<your-username>.github.io`. You may n
 to make a commit for GitHub to generate the site (just add a space to 
 [`_config.yml`](_config.yml) or something).
 
+**But** you'll need to make a change each time you create or change one of your repos,
+so this page will regenerate.
+
 Prefer to use a project page instead of a user/org page? You'll just have to rename
 the `master` branch to `gh-pages`. You'll have to do that using the GitHub Desktop
 application or at the command line though. :-/
